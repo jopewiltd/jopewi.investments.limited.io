@@ -8,10 +8,10 @@ const slidesContainer = document.querySelector('.slides');
 
 // Supply your image URLs here (can be from your own folder or online)
 const images = [
-  "./slide1.png",
-  "./slide2.png",
-  "./slide3.png",
-  "./slide4.png"
+  "./js/slide1.png",
+  "./js/slide2.png",
+  "./js/slide3.png",
+  "./js/slide4.png"
 ];
 
 // Create <img> elements dynamically
@@ -37,6 +37,7 @@ document.querySelector('.right').addEventListener('click',()=>showSlide(index+1)
 
 // Automatic slide every 4 seconds
 setInterval(()=> showSlide(index+1), 4000);
+
 
 
 
