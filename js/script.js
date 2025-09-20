@@ -8,10 +8,10 @@ const slidesContainer = document.querySelector('.slides');
 
 // ✅ Use root–relative paths for GitHub Pages
 const images = [
-  "../images/slide1.png",
-  "../images/slide2.png",
-  "../images/slide3.png",
-  "../images/slide4.png"
+  "./images/slide1.png",
+  "./images/slide2.png",
+  "./images/slide3.png",
+  "./images/slide4.png"
 ];
 
 // Create <img> elements dynamically
@@ -37,5 +37,6 @@ document.querySelector('.right').addEventListener('click', () => showSlide(index
 
 // Automatic slide every 4 seconds
 setInterval(() => showSlide(index + 1), 4000);
+
 
 
