@@ -47,20 +47,6 @@
     <li><strong>PO.BOX:</strong> 7721-00300 </li>
   </ul>
 
-<form id="quoteForm" class="quote-form">
-  <label>Name:
-    <input type="text" name="name" id="name" required>
-  </label>
-  <label>Your Email:
-    <input type="email" name="email" id="email" required>
-  </label>
-  <label>Origin & Destination:
-    <textarea name="route" id="route" required></textarea>
-  </label>
-  <button type="submit">Send Request</button>
-</form>
-
-
 </main>
 
 <footer class="site-footer">
@@ -85,33 +71,8 @@
 
 <script src="../js/script.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
-<script>
-document.getElementById("quoteForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // stop normal form submit
 
-  const name  = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const route = document.getElementById("route").value.trim();
-
-  // subject line for the email
-  const subject = encodeURIComponent("Transport Quote Request from " + name);
-
-  // body of the email – include the textarea content
-  const body = encodeURIComponent(
-    "Name: " + name + "\n" +
-    "Email: " + email + "\n\n" +
-    "Route details:\n" + route
-  );
-
-  // Build the mailto URL:
-  // - "to" left empty so the visitor can type recipient
-  // - "cc" set to Jopewi email so it is copied automatically
-  const mailto = `mailto:?cc=jopewi.investmentsltd@gmail.com&subject=${subject}&body=${body}`;
-
-  // Open the visitor’s email client with the message pre-filled
-  window.location.href = mailto;
-});
-</script>
 
 </body>
 </html>
+
