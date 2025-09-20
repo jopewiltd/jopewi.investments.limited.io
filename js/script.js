@@ -8,7 +8,7 @@ const slidesContainer = document.querySelector('.slides');
 
 // Supply your image URLs here (can be from your own folder or online)
 const images = [
-  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide1.png",
+  "https://drive.google.com/file/d/1QuHPhoE5mfJ63esBD-XGbku6fy0OPfPx/view?usp=drive_link",
   "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide2.png",
   "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide3.png",
   "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide4.png"
@@ -37,6 +37,7 @@ document.querySelector('.right').addEventListener('click',()=>showSlide(index+1)
 
 // Automatic slide every 4 seconds
 setInterval(()=> showSlide(index+1), 4000);
+
 
 
 
