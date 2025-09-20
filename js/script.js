@@ -8,10 +8,10 @@ const slidesContainer = document.querySelector('.slides');
 
 // Supply your image URLs here (can be from your own folder or online)
 const images = [
-  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide1.png?raw=true",
-  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide2.png?raw=true",
-  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide3.png?raw=true",
-  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide4.png?raw=true"
+  "https://raw.githubusercontent.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide1.png",
+  "https://raw.githubusercontent.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide2.png",
+  "https://raw.githubusercontent.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide3.png",
+  "https://raw.githubusercontent.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide4.png"
 ];
 
 // Create <img> elements dynamically
@@ -37,6 +37,7 @@ document.querySelector('.right').addEventListener('click',()=>showSlide(index+1)
 
 // Automatic slide every 4 seconds
 setInterval(()=> showSlide(index+1), 4000);
+
 
 
 
