@@ -1,0 +1,6 @@
+const images = [
+  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide1.png?raw=true",
+  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide2.png?raw=true",
+  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide3.png?raw=true",
+  "https://github.com/jopewiltd/jopewi.investments.limited.io/blob/main/images/slide4.png?raw=true"
+];
